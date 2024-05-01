@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    margin: 30px;
+    padding: 0;
+    font-family: 'Nova Square', sans-serif;
+    background: linear-gradient(232deg, rgba(0, 15, 30, 0.5), rgba(38, 33, 69, 0.5)), url('/image/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.result-text {
+    font-size: 24px;
+    flex: 1;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    background-color: #5cbdfd;
+    padding: 5px;
+    margin-left: 20px;
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid #ade8f4;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.leaderboard-entry {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid #ade8f4;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.entry-data {
+    flex: 1;
+    text-align: center;
+}
+
+.big-box {
+    border: 2px solid #ade8f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 78%;
+    text-align: center;
+    margin: 20px auto 0; 
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      margin: 10px;
+    }
+  
+    .header {
+      padding: 10px;
+      font-size: 20px;
+    }
+  
+    .back-button {
+      font-size: 16px;
+    }
+  
+    .result-text {
+      font-size: 18px;
+    }
+  
+    .section-container { 
+        flex-direction: column;
+        margin: 10px 0; 
+        font-size: 9px;
+    }
+  
+    .container {
+      margin-left: 20px;
+      height: 8px;
+      width: 70px;
+      margin-bottom: 10px;
+    }
+  
+    .leaderboard-entry {
+      width: 90%;
+      font-size: 8px;
+    }
+  
+    .big-box {
+      padding: 10px; 
+      width: 90%;
+      margin: 10px auto 0;
+      height: 100px;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="solo.css">
+  <title>Calqlated</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+        <span class="logo-text">CALQLATED</span>
+    </div>
+  </header>
+  <div id="solo">
+    <p>Solo</p>
+  </div>
+  <div class="quiz-settings">
+    <div class="section">
+        <label>Choose Your Topic</label>
+        <select class="topics">
+            <option value="limits">Limits</option>
+            <option value="derivative">Derivative and function</option>
+            <option value="higher">Higher derivative</option>
+            <option value="trigo">Derivatives of trigonometric fuctions</option>
+            <option value="inverse">Derivatives of inverse trigonometric fuctions</option>
+            <option value="logarithmic">Derivatives of logarithmic and exponential functions</option>
+            <option value="fuctions">Derivatives of hyperbolic and inverse hyperbolic functions</option>
+            <option value="implicit">Implicit Differentiation</option>
+            <option value="explicit">Explicit Differentiation</option>
+        </select>
+        <div class="icon-container">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    <div class="section">
+        <label>Level of Difficulty</label>
+        <select class="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <div>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+    <div class="section">
+        <label>Number of Questions</label>
+        <input type="number" id="numQuestions" min="0" max="50" value="0">
+    </div>
+    <div class="section">
+      <button id="startButton">Start</button>
+  </div>
+</div>
+</body>
+</html>

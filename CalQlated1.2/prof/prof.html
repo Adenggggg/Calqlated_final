@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prof.css">
+    <title>Calqlated</title>
+</head>
+<body>
+    <div class="quiz-setup-container">
+        <h1>Setup your Quiz</h1>
+        
+        <label for="quizDate">Select Date:</label>
+        <input type="date" id="quizDate" required>
+
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime" required>
+
+        <label for="endTime">End Time:</label>
+        <input type="time" id="endTime" required>
+
+        <label class="switch-container">
+            Show Correct Answer:
+            <label class="switch">
+                <input type="checkbox" id="showCorrectAnswer">
+                <span class="slider"></span>
+            </label>
+        </label>
+
+        <label class="switch-container">
+            Show Solution After Quiz:
+            <label class="switch">
+                <input type="checkbox" id="showSolution">
+                <span class="slider"></span>
+            </label>
+        </label>
+
+        <label for="questionTimer">Timer (seconds):</label>
+        <input type="number" id="questionTimer" min="1" value="10" required>
+
+        <a href="/prof1/prof1.html"><button>Back</button></a>
+        <a href="/prof2/prof2.html"><button>Next</button></a>
+    </div>
+
+    <script src="prof.js"></script>
+</body>
+</html>

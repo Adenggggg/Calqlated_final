@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    margin: 30px;
+    padding: 0;
+    font-family: 'Nova Square', sans-serif;
+    background: linear-gradient(232deg, rgba(0, 15, 30, 0.5), rgba(38, 33, 69, 0.5)), url('/image/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+  header {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .leaderboard-text {
+    margin: 0;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+  
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.leaderboard-entry {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid #ade8f4;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.entry-data {
+    flex: 1;
+    text-align: center;
+}
+
+.big-box {
+    border: 2px solid #ade8f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 78%;
+    text-align: center;
+    margin: 20px auto 0; 
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .leaderboard-entry {
+        width: 90%; 
+        padding: 8px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .back-button {
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+    }
+
+    .big-box {
+        width: 80%;
+    }
+}
+
+  

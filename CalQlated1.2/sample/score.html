@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Score</title>
+  <link rel="stylesheet" href="score.css">
+</head>
+<body>
+
+<div id="score-container">
+  <p>Your final score is: <span id="score">0</span></p>
+  <img src="/image/trophy.png" alt="Trophy" id="trophy">
+  <p id="congratulations">Congratulations! You've completed the quiz!</p>
+
+  <!-- Buttons for showing correct answer and solution -->
+  <button id="showCorrectAnswerBtn">Show Correct Answer</button>
+  <button id="showSolutionBtn">Show Solution</button>
+
+  <!-- Modals -->
+  <div id="correctAnswerModal" class="modal common-modal">
+    <div class="modal-content">
+      <span id="closeCorrectAnswerModalBtn" class="close">&#x2715;</span>
+      <p>Correct Answer: <!-- Correct answer goes here --></p>
+    </div>
+  </div>
+
+  <div id="solutionModal" class="modal common-modal">
+    <div class="modal-content">
+      <span id="closeSolutionModalBtn" class="close">&#x2715;</span>
+      <p>Solution: <!-- Solution goes here --></p>
+    </div>
+  </div>
+</div>
+
+<script src="score.js"></script>
+
+</body>
+</html>

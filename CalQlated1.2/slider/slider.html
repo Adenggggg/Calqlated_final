@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calqlated</title>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <div id="timerDisplay" class="timer"></div>
+
+  <div id="quiz-container">
+    <div class="student-reminder">
+      <p><strong>Number of Students Taking the Quiz:</strong> 10</p>
+    </div>
+    <div class="question-container">
+      <div class="slide">
+        <div class="image-container">
+          <img src="/image/bulb.png" alt="Hint Bulb" class="hint-image" onclick="toggleHint('hint1')">
+          <div id="hint1" class="hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="question">
+          <p>What is the capital of France?</p>
+        </div>
+        <div class="choices">
+          <input type="radio" id="answer1A" name="answer1">
+          <label for="answer1A">A. Paris</label>
+          <input type="radio" id="answer1B" name="answer1">
+          <label for="answer1B">B. Rome</label>
+          <input type="radio" id="answer1C" name="answer1">
+          <label for="answer1C">C. Berlin</label>
+        </div>
+        <div class="link-container">
+          <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-container">
+      <div class="slide">
+        <div class="image-container">
+          <img src="/image/bulb.png" alt="Hint Bulb" class="hint-image">
+          <div class="hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="question">
+          <p>What is the largest planet in our solar system?</p>
+        </div>
+        <div class="choices">
+          <input type="radio" id="answer2A" name="answer2">
+          <label for="answer2A">A. Jupiter</label>
+          <input type="radio" id="answer2B" name="answer2">
+          <label for="answer2B">B. Saturn</label>
+          <input type="radio" id="answer2C" name="answer2">
+          <label for="answer2C">C. Earth</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-container">
+      <div class="slide">
+        <div class="image-container">
+          <img src="/image/bulb.png" alt="Hint Bulb" class="hint-image">
+          <div class="hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="question">
+          <p>What is the chemical symbol for water?</p>
+        </div>
+        <div class="choices">
+          <input type="radio" id="answer3A" name="answer3">
+          <label for="answer3A">A. H2O</label>
+          <input type="radio" id="answer3B" name="answer3">
+          <label for="answer3B">B. CO2</label>
+          <input type="radio" id="answer3C" name="answer3">
+          <label for="answer3C">C. NaCl</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-buttons">
+      <button id="prevButton" style="display: none;" onclick="prevQuestion()">Previous</button>
+      <button id="nextButton" style="display: none;" onclick="nextQuestion()">Next</button>
+    </div>
+    
+    <div id="result"></div>
+  </div>
+
+  <script src="slider.js"></script>
+</body>
+</html>

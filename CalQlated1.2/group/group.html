@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="group.css"> <!-- Link to your external CSS file -->
+  <title>Calqlated</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+        <span class="logo-text">CALQLATED</span>
+    </div>
+  </header>
+  
+  <div id="group">
+    <p>Group</p>
+    
+    <!-- Warning icon placed between "Group" and "Choose Your Topic" -->
+    <div class="warning-section">
+      <div class="warning-icon" title="Warning!">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <span class="warning-message">• All questions are required to be answered. <br> <br> • Please be aware that you have 30 seconds to answer every question</span>
+    </div>
+    
+    <div class="quiz-settings">
+      <div class="section">
+          <label>Choose Your Topic</label>
+          <select class="topics">
+            <option value="limits">Limits</option>
+            <option value="derivative">Derivative and function</option>
+            <option value="higher">Higher derivative</option>
+            <option value="trigo">Derivatives of trigonometric fuctions</option>
+            <option value="inverse">Derivatives of inverse trigonometric fuctions</option>
+            <option value="logarithmic">Derivatives of logarithmic and exponential functions</option>
+            <option value="fuctions">Derivatives of hyperbolic and inverse hyperbolic functions</option>
+            <option value="implicit">Implicit Differentiation</option>
+            <option value="explicit">Explicit Differentiation</option>
+          </select>
+          <div class="icon-container">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+      </div>
+
+      <div class="section">
+          <label>Number of Questions</label>
+          <input type="number" id="numQuestions" min="0" max="50" value="0">
+      </div>
+
+      <div class="section">
+        <button id="startButton">Start</button>
+      </div>
+    </div>
+  
+  </div>
+
+</body>
+</html>
